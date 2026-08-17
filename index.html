@@ -1,1 +1,638 @@
 
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Abdullah Printers | Premium Printing Solutions</title>
+
+  <meta name="description" content="Abdullah Printers - Premium printing, packaging, labels, cards, bill books and custom printing solutions.">
+
+  <style>
+
+    * {
+
+      margin: 0;
+
+      padding: 0;
+
+      box-sizing: border-box;
+
+    }
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+    body {
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      background: #0b0b0d;
+
+      color: #ffffff;
+
+      line-height: 1.6;
+
+    }
+
+    header {
+
+      min-height: 100vh;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 30px 20px;
+
+      background:
+
+        radial-gradient(circle at top, #3b321b 0%, #171511 35%, #0b0b0d 70%);
+
+    }
+
+    .hero {
+
+      max-width: 900px;
+
+    }
+
+    .logo {
+
+      width: 90px;
+
+      height: 90px;
+
+      margin: 0 auto 25px;
+
+      border: 2px solid #d4af37;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 42px;
+
+      font-weight: bold;
+
+      color: #d4af37;
+
+      box-shadow: 0 0 35px rgba(212,175,55,.25);
+
+    }
+
+    .hero h1 {
+
+      font-size: clamp(42px, 8vw, 82px);
+
+      letter-spacing: 2px;
+
+      margin-bottom: 15px;
+
+    }
+
+    .gold {
+
+      color: #d4af37;
+
+    }
+
+    .hero p {
+
+      font-size: clamp(18px, 3vw, 25px);
+
+      color: #d0d0d0;
+
+      margin-bottom: 30px;
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      padding: 14px 28px;
+
+      margin: 8px;
+
+      border-radius: 30px;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      transition: .3s;
+
+    }
+
+    .btn-primary {
+
+      background: #d4af37;
+
+      color: #111;
+
+    }
+
+    .btn-secondary {
+
+      border: 1px solid #d4af37;
+
+      color: #d4af37;
+
+    }
+
+    .btn:hover {
+
+      transform: translateY(-3px);
+
+    }
+
+    section {
+
+      padding: 80px 20px;
+
+      max-width: 1150px;
+
+      margin: auto;
+
+    }
+
+    .title {
+
+      text-align: center;
+
+      margin-bottom: 45px;
+
+    }
+
+    .title h2 {
+
+      font-size: 40px;
+
+      margin-bottom: 10px;
+
+    }
+
+    .title p {
+
+      color: #aaa;
+
+    }
+
+    .about {
+
+      text-align: center;
+
+      max-width: 850px;
+
+      margin: auto;
+
+      color: #ccc;
+
+      font-size: 18px;
+
+    }
+
+    .services {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+      gap: 20px;
+
+    }
+
+    .card {
+
+      background: #151519;
+
+      border: 1px solid #29292e;
+
+      border-radius: 18px;
+
+      padding: 30px 22px;
+
+      text-align: center;
+
+      transition: .3s;
+
+    }
+
+    .card:hover {
+
+      transform: translateY(-6px);
+
+      border-color: #d4af37;
+
+    }
+
+    .icon {
+
+      font-size: 42px;
+
+      margin-bottom: 15px;
+
+    }
+
+    .card h3 {
+
+      color: #d4af37;
+
+      margin-bottom: 10px;
+
+    }
+
+    .card p {
+
+      color: #aaa;
+
+    }
+
+    .products {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+      gap: 18px;
+
+    }
+
+    .product {
+
+      min-height: 180px;
+
+      background: linear-gradient(145deg, #1b1b20, #101014);
+
+      border-radius: 18px;
+
+      border: 1px solid #29292e;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 20px;
+
+    }
+
+    .product strong {
+
+      font-size: 20px;
+
+      color: #fff;
+
+    }
+
+    .product span {
+
+      color: #d4af37;
+
+      margin-top: 8px;
+
+    }
+
+    .contact {
+
+      text-align: center;
+
+      background: #111114;
+
+      border-radius: 25px;
+
+      padding: 50px 25px;
+
+      border: 1px solid #29292e;
+
+    }
+
+    .contact h2 {
+
+      font-size: 38px;
+
+      margin-bottom: 15px;
+
+    }
+
+    .contact p {
+
+      color: #aaa;
+
+      margin-bottom: 25px;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      padding: 30px 20px;
+
+      border-top: 1px solid #242429;
+
+      color: #888;
+
+    }
+
+    footer strong {
+
+      color: #d4af37;
+
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+
+        padding: 60px 18px;
+
+      }
+
+      .hero h1 {
+
+        font-size: 48px;
+
+      }
+
+      .title h2 {
+
+        font-size: 32px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="hero">
+
+      <div class="logo">A</div>
+
+      <h1>
+
+        Abdullah <span class="gold">Printers</span>
+
+      </h1>
+
+      <p>
+
+        Bringing Your Ideas to Life With
+
+        <span class="gold">Premium Printing</span>
+
+      </p>
+
+      <a href="#services" class="btn btn-primary">
+
+        Our Services
+
+      </a>
+
+      <a href="#contact" class="btn btn-secondary">
+
+        Contact Us
+
+      </a>
+
+    </div>
+
+  </header>
+
+  <section id="about">
+
+    <div class="title">
+
+      <h2>About <span class="gold">Us</span></h2>
+
+      <p>Professional printing solutions</p>
+
+    </div>
+
+    <div class="about">
+
+      <p>
+
+        Abdullah Printers provides professional printing solutions
+
+        for businesses, brands and individuals. From business cards
+
+        and labels to packaging, bill books and custom printing,
+
+        we focus on quality, creative design and reliable production.
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="services">
+
+    <div class="title">
+
+      <h2>Our <span class="gold">Services</span></h2>
+
+      <p>Complete printing solutions under one roof</p>
+
+    </div>
+
+    <div class="services">
+
+      <div class="card">
+
+        <div class="icon">📒</div>
+
+        <h3>Bill Books</h3>
+
+        <p>Professional custom bill books for businesses.</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">💳</div>
+
+        <h3>Business Cards</h3>
+
+        <p>Premium business cards with professional finishing.</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">🏷️</div>
+
+        <h3>Labels & Tags</h3>
+
+        <p>Custom labels and hang tags for brands and products.</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">📦</div>
+
+        <h3>Packaging</h3>
+
+        <p>Custom boxes, bags and packaging solutions.</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">💌</div>
+
+        <h3>Wedding Cards</h3>
+
+        <p>Elegant and customized wedding invitations.</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">🖨️</div>
+
+        <h3>Commercial Printing</h3>
+
+        <p>High-quality printing for businesses and brands.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="title">
+
+      <h2>What We <span class="gold">Print</span></h2>
+
+      <p>Selected printing products</p>
+
+    </div>
+
+    <div class="products">
+
+      <div class="product">
+
+        <strong>Letterheads</strong>
+
+        <span>Professional</span>
+
+      </div>
+
+      <div class="product">
+
+        <strong>Envelopes</strong>
+
+        <span>Custom Printed</span>
+
+      </div>
+
+      <div class="product">
+
+        <strong>Hang Tags</strong>
+
+        <span>Branding</span>
+
+      </div>
+
+      <div class="product">
+
+        <strong>Labels</strong>
+
+        <span>Custom Design</span>
+
+      </div>
+
+      <div class="product">
+
+        <strong>Boxes</strong>
+
+        <span>Premium Packaging</span>
+
+      </div>
+
+      <div class="product">
+
+        <strong>Bags</strong>
+
+        <span>Custom Printing</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="contact">
+
+      <h2>
+
+        Let's Create Something
+
+        <span class="gold">Amazing</span>
+
+      </h2>
+
+      <p>
+
+        Contact Abdullah Printers for your next printing project.
+
+      </p>
+
+      <a href="mailto:abdullahprinters@gmail.com"
+
+         class="btn btn-primary">
+
+        Email Us
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    © 2026 <strong>Abdullah Printers</strong>.
+
+    All Rights Reserved.
+
+  </footer>
+
+</body>
+
+</html>
